@@ -7,10 +7,10 @@ class EmailParser
   attr_accessor :data
 
   def initialize(data)
-    @data = data    
+    @data = data
   end
 
   def parse
-    
+    self.data.scan().uniq
   end
 end
