@@ -11,6 +11,6 @@ class EmailParser
   end
 
   def parse
-    self.data.scan().uniq
+    self.data.scan(/\w+\@\w+\.[A-Za-z]{2, 4}/).uniq
   end
 end
